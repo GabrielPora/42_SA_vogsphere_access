@@ -1,22 +1,27 @@
-# 42_vogsphere_access
-##Kerberos &amp; Git access of 42's school
+# 42_SA_vogsphere_access
+##Setup Kerberos &amp; Git access to 42 SA
 
-A script that make all stuff necessary to access to the vogsphere from GNU/Linux or OS X.
+To setup access to your git repos on vogsphere, (only works on Linux / OSX)
 
-The script is documented so read it.
+####Clone this repo
 
-Fully functional ;)
+####Run the shell script 
+	
+	sudo sh run.sh
 
-###Nota : xlogin = your 42's login
+(Enter system password if you need sudo previleges)
 
-###To identify you :
+####Get your kerberos ticket
 
-    kinit xlogin
-    enter your 42's password
+	kinit xloginx
 
-You are connected, now you can git clone/push/pull from/to vogsphere.
+(xloginx represents your login id)
 
-###To close your connexion :
+####Enter your 42 password when asked to successfull authenticate.
+
+####Clone/Push/Pull from all the Vogsphere Git repos you have access to. 
+
+####To close your connection :
 
     kdestroy
 
